@@ -16,7 +16,7 @@ include_directories(
 
 add_executable(${PROJECT_NAME} ${SOURCE_FILES})
 
-set(SDL2_LIBRARIES mingw32 SDL2main SDL2)
+set(SDL2_LIBRARIES mingw32 SDL2main SDL2 SDL2_image)
 target_link_libraries(${PROJECT_NAME} PRIVATE ${SDL2_LIBRARIES})
 
 set_target_properties(${PROJECT_NAME} PROPERTIES
